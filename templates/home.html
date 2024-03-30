@@ -9,6 +9,7 @@
        height: 360px;
        width: 100%;
        object-fit: cover;
+       margin-bottom: 16px;
      }
    </style>
 
@@ -17,9 +18,11 @@
  </head>
   
  <body>
+  {% include 'nav.html' %}
+   <img class="img-fluid" id="banner" src="static/banner.jpeg">
   <div class="container">
     <h1 class="text-center mt-2 mb-4">Careers</h1>
-    <img class="img-fluid" id="banner" src="static/banner.jpeg">
+
     <h2 class="text-center mt-2 mb-4">About Careers</h2>
      
         <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy             text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>    
@@ -36,5 +39,6 @@
       <button class="btn btn-primary btn-lg"">Contact Us</button>
     </div>
   </div>
+   {% include 'footer.html' %}
  </body>
 </html>
